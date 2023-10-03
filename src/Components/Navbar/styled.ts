@@ -8,6 +8,7 @@ height: 150px;
 display: flex;
 justify-content: center;
 gap: 30px;
+
 `
 
 const Container=styled.div`
