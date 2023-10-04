@@ -1,4 +1,4 @@
-import { Logo,SelectWrap, SelectBox, Wrapper, H1,Select, Container, Icon, Icons } from "../TfInfo/styled"
+import { Logo,SelectWrap, SelectBox, Wrapper, H1,Select, Container, Icon, Icons } from "./styled"
 import Tg from "../../assets/icons/tg.png"
 import Insta from "../../assets/icons/insta.png"
 import Face from "../../assets/icons/facebook.png"

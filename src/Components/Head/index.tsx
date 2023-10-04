@@ -1,5 +1,5 @@
 import { Container, Img, Imgs, Wrap } from "./style"
-import Back from "../../assets/png/statuette-5e7c7603.webp"
+import Back from "../../assets/png/bron.svg"
 import Banner from "../../assets/png/banner.png"
 
 const Head = () => {

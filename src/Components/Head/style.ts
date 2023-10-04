@@ -20,12 +20,9 @@ justify-content: center;
 align-items: center;
 `
 const Img =styled.img`
-width: 500px;
-height: 2790px;
-padding-top: 1100px;
+height: 765px;
 `
 const Imgs =styled.img`
-width: 1000px;
 height: 300px;
 `
 
