@@ -5,6 +5,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Card from "../Card";
+import { P } from "../Contact/style";
 
 
 const Wait = () => {
@@ -15,7 +16,7 @@ const Wait = () => {
     <Wrapper>
       <Container>
         <div style={{display:"flex",justifyContent:"space-between"}}>
-        <h1 style={{ color: "white", fontSize: "40px", lineHeight: "48px" }}>Кинопоказы</h1>
+        <P style={{ fontSize: "40px", lineHeight: "48px" }}>Кинопоказы</P>
          <div style={{display:"flex",gap:"200px",width:"600px"}}>
          <AntdSelect labelInValue defaultValue={{ value: 'Все', label: 'Все' }} style={{ width: 120 }} onChange={handleChange} options={[ { value: 'Австрийская Республика', label: 'Австрийская Республика', }, { value: 'Азербайджанская Республика', label: 'Азербайджанская Республика', }, ]} />
          <AntdSelect labelInValue defaultValue={{ value: 'Скачать', label: 'Скачать' }} style={{ width: 120 }} onChange={handleChange} options={[ { value: 'РЕПЕРТУАРНЫЙ ПЛАН КИНОПОКАЗОВ В КИНОТЕАТРАХ ТАШКЕНТА', label: 'РЕПЕРТУАРНЫЙ ПЛАН КИНОПОКАЗОВ В КИНОТЕАТРАХ ТАШКЕНТА', } ]} />

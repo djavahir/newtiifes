@@ -1,22 +1,41 @@
-import { AntdSelect, Container,Img, Sviper, SviperSlide, Wrapper } from "./style";
+import { Container,Dropdovn,Img, Spase, Wrapper } from "./style";
 import { Keyboard, Scrollbar, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Bean from "../../assets/icons/mr.jpg"
+import { P } from "../Contact/style";
+import { Sviper, SviperSlide } from "../Brands/style";
+import { DownOutlined } from '@ant-design/icons';
+// import type { MenuProps } from 'antd';
+
+
+// dropdown
+
+const items = [
+  {
+    label: 'Алжирская Народная Демократическая Республика',
+    key: '1',
+  },
+  {
+    label: 'Алжирская Народная Демократическая Республика',
+    key: '2',
+  },
+  {
+    label: 'Алжирская Народная Демократическая Республика',
+    key: '3',
+  },
+];
 
 
 const Actor = () => {
-  const handleChange = (value: { value: string; label: React.ReactNode }) => {
-    console.log(value);
-  };
   return (
     <Wrapper>
       <Container>
-        <div style={{display:"flex", justifyContent:"space-between",alignItems:"center",paddingRight:"130px"}}>
-         <h1 style={{ color: "white", fontSize: "40px", lineHeight: "48px" }}>Кинопоказы</h1>
-         <AntdSelect labelInValue defaultValue={{ value: 'Все', label: 'Все' }} style={{ width: 120 }} onChange={handleChange} options={[ { value: 'Австрийская Республика', label: 'Австрийская Республика', }, { value: 'Азербайджанская Республика', label: 'Азербайджанская Республика', }, ]} />
+        <div style={{display:"flex", justifyContent:"space-between",alignItems:"center"}}>
+         <P style={{ fontSize: "40px", lineHeight: "48px" }}>Лица</P>
+         <Dropdovn menu={{ items }} trigger={["click"]}><Spase>Все<DownOutlined /></Spase></Dropdovn>
         </div>
 
         <Sviper

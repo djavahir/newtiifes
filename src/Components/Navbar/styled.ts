@@ -1,22 +1,28 @@
 import styled from "styled-components";
 
 const Wrapper=styled.div`
-background:black;
+background-image: url("https://www.tiffest.uz/assets/main-bg-2674f033.png");
+background: black;
 color: white;
 width: 100%;
-height: 150px;
+height: 130px;
 display: flex;
 justify-content: center;
 gap: 30px;
-
 `
 
 const Container=styled.div`
 align-items: center;
-max-width: 1480px;
+padding: 20px 230px;
 width: 100%;
 display: flex;
 justify-content: space-between;
+overflow: hidden;
+position: fixed;
+top: 0;
+z-index: 1000;
+background-color: black;
+opacity: 0.7;
 `
 
 const Logo =styled.img`
@@ -42,22 +48,16 @@ align-items: center;
 justify-content: center;
 
 `
-const H1 =styled.div`
-color: white;
-font-size: 20px;
-&:hover{
-    border-bottom: 2px solid yellow;
-}
-`
 const Select =styled.select`
 color: white;
 background: none;
 font-size: 20px;
 border:  ${({ pro }) => pro?"1px solid white": 'none'};
-
+:hover{
+    color: #EBAD2D;
+}
 `
 
 
 
-export {Wrapper,Icon,Icons,SelectWrap,Logo,Container,SelectBox,H1,Select}
-// vghbjk
+export {Wrapper,Icon,Icons,SelectWrap,Logo,Container,SelectBox,Select}

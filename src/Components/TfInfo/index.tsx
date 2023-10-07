@@ -1,3 +1,4 @@
+import { P } from "../Contact/style"
 import { Box, Boxx, Container, H1, Logo, Wrapper } from "./styled"
 
 const TfInfo = () => {
@@ -5,7 +6,7 @@ const TfInfo = () => {
     <Wrapper>
       <Container>
         <Box>
-          <h1 style={{color:"white",fontSize:"50px"}}>TIFFEST-2023</h1>
+          <P style={{fontSize:"50px"}}>TIFFEST-2023</P>
           <H1>TIFFEST-2023</H1>
         </Box>
         <Boxx>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Select } from 'antd';
+import { Dropdown,Space } from 'antd';
+import type { MenuProps } from 'antd';
+
 
 
 const Wrapper=styled.div`
@@ -15,37 +16,37 @@ justify-content: center;
 const Container=styled.div`
 max-width: 1480px;
 width: 100%;
-height: 546px;
 display: flex;
 flex-direction: column;
 gap: 30px;
 `
-
-const Sviper=styled(Swiper)`
-width: 100%;
-height: 100%;
+const Dropdovn=styled(Dropdown)`
+width: 250px;
+border-radius: 8px;
+background: #181818;
+height: 44px;
+border: none;
+cursor: pointer;
 
 `
-const SviperSlide=styled(SwiperSlide)`
+const Spase=styled(Space)`  
 display: flex;
-justify-content: center;
-align-items: center;
+justify-content: space-between;
+color: white;
+padding: 0 10px;
+font-size: 20px;
 `
-const AntdSelect=styled(Select)`
-.ant-select-selector {
-    height: 44px !important;
-    background: #181818 !important;
-    display: flex !important;
-    align-items: center !important;
-    color: white !important;
-    width: 250px !important;
-    
+
+const Img =styled.img`
+position: relative;
+height: 380px;
+border-radius: 5px;
+&:hover{
+    border: 2px solid #EBAD2D;
 }
 `
-const Img =styled.img`
-width: 318px;
-height: 446px;
-position: relative;
+const Menu=styled.div`
+
 `
 
-export {Wrapper,Sviper,Img,AntdSelect,SviperSlide,Container}
+export {Wrapper,Menu,Img,Dropdovn,Spase,Container}

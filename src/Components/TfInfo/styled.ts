@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 const Wrapper=styled.div`
-background-image: url("https://cdn.pnghd.pics/data/769/pattern-background-black-50.jpg");
+background-position: center center;
+background-size: 100%;
+background-color: #181818;
+background-image: url(" https://www.tiffest.uz/assets/bg-decor-7d21ae27.svg");
 height: 800PX;
 width: 100%;
 display: flex;
@@ -26,7 +29,6 @@ const Boxx=styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
-/* gap: 0px; */
 `
 
 const H1=styled.div`

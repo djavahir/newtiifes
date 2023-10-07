@@ -9,11 +9,13 @@ max-width: 334px;
 height: 434px;
 background-color: #454545;
 gap: 20px;
+
 `
 
 const Container=styled.div`
 display: flex;
 justify-content: space-between;
+
 `
 const Box=styled.div`
 display: flex;

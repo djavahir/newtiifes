@@ -3,7 +3,6 @@ import styled from "styled-components";
 const Wrap=styled.div`
 position: relative;
 width: 100%;
-height: 765px;
 background-image: url("https://www.tiffest.uz/assets/main-bg-2674f033.png");
 display: flex;
 justify-content: center;

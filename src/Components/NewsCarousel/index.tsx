@@ -6,12 +6,13 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Card from "../Card";
+import { P } from "../Contact/style";
 
 const News = () => {
   return (
     <Wrapper>
      <Container>
-      <h1 style={{color:"white",fontSize:"40px",lineHeight:"48px"}}>Новости</h1>
+      <P style={{fontSize:"40px",lineHeight:"48px"}}>Новости</P>
       <Sviper  slidesPerView={4}
         centeredSlides={false}
         slidesPerGroupSkip={4}
@@ -27,9 +28,6 @@ const News = () => {
         }}
         scrollbar={true}
         navigation={true}
-        pagination={{
-          clickable: true,
-        }}
         modules={[Keyboard, Scrollbar, Navigation, Pagination]}
         className="mySwiper">
         <SviperSlide><Card/></SviperSlide>

@@ -27,6 +27,30 @@ const Img =styled.img`
 const Sviper=styled(Swiper)`
 width: 100%;
 height: 100%;
+.swiper-button-prev{
+    width: 50px;
+    height: 50px;
+    background: #575757;
+    color: #8E8E8E;
+    border-radius: 50%;
+    border: none;
+}
+.swiper-button-prev:hover{
+    border: 1px solid #EBAD2D;
+    color: #EBAD2D;
+}
+.swiper-button-next{
+    width: 50px;
+    height: 50px;
+    background: #575757;
+    color: #8E8E8E;
+    border-radius: 50%;
+    border: none;
+}
+.swiper-button-next:hover{
+    border: 1px solid #EBAD2D;
+    color: #EBAD2D;
+}
 `
 const SviperSlide=styled(SwiperSlide)`
 display: flex;

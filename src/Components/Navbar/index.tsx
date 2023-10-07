@@ -1,8 +1,9 @@
-import { Logo,SelectWrap, SelectBox, Wrapper, H1,Select, Container, Icon, Icons } from "./styled"
+import { Logo,SelectWrap, SelectBox, Wrapper, Select, Container, Icon, Icons } from "./styled"
 import Tg from "../../assets/icons/tg.png"
 import Insta from "../../assets/icons/insta.png"
 import Face from "../../assets/icons/facebook.png"
 import YouTube from "../../assets/icons/you.png"
+import { P } from "../Contact/style"
 
 
 const Navbar = () => {
@@ -11,14 +12,15 @@ const Navbar = () => {
         <Container>
         <Logo src="https://tiffest.uz/assets/logo-ru-d40dc871.png"/>
         <SelectBox>
-         <H1>Yangiliklar</H1>
+         <P>Новости</P>
          <SelectWrap> 
-         <Select><option>kino korish</option><option>premyera</option></Select> 
-         <Select><option>litsa</option><option>premyera</option></Select> 
-         <Select><option>programma</option><option>premyera</option></Select> 
+         <Select name="kino" id="kino"><option value={'Кинопоказы'}>Кинопоказы</option></Select> 
+         <Select name="kino" id="kino"><option value={'Лица'}>Лица</option></Select> 
+         <Select name="kino" id="kino"><option value={'Программа'}>Программа</option></Select> 
          </SelectWrap>
-         <H1>Media</H1>  
-         <H1>Tarix</H1>  
+         <P>Медиа</P>  
+         <P>История</P>  
+         <P>Локации</P>  
         </SelectBox>
         <Icon>
             <a href=""><Icons src={Face}/></a>
